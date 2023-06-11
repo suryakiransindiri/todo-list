@@ -1,0 +1,29 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "srinu",
+      "marks": 79
+    },
+    {
+      "id": 2,
+      "name": "surya",
+      "marks": 99
+    },
+    {
+      "id": 3,
+      "name": "kiran",
+      "marks": 90
+    },
+    {
+      "id": 4,
+      "name": "ram",
+      "marks": 100
+    },
+    {
+      "id": "22",
+      "name": "Molleti Purna Chandra Vasudeva Rao",
+      "marks": "80"
+    }
+  ]
+}
