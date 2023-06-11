@@ -1,0 +1,63 @@
+<!-- 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+     <form >
+        Name : <input type="text" name="Username" pattern="[a-zA-Z]{3,}" required><p>
+        Marks: <input type="password" name="Password" pattern="(?=.[A-Z])(?=.[a-z])(?=.\d])(?=.*\W+).{6,}" required><p>
+            <button type="submit" form="form1" value="Submit">Submit</button>
+    </form> 
+   
+</body>
+</html>   -->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <div class="surya">
+<div class="container">
+  <form [formGroup]="save" (ngSubmit)="submitForm()">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Marks</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="marks" name="Marks" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Id</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="uid" name="id" placeholder="">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="btn">
+    <input type="submit" value="SAVE">
+  </div>
+  </form>
+</div>
+</div>
+</body>
+</html>
+
+
+

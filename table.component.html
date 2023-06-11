@@ -1,0 +1,28 @@
+<h1>My Custom Table</h1>
+<hr>
+<table id="users">
+  <tr>
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+  <tr *ngFor="let row of rows">
+   <td>
+    {{row.id}}
+   </td>
+   <td>
+    <a (click)="edit()">{{row.name}}</a>
+   </td>
+   <td>
+      {{row.marks}}
+   </td>
+   <td>
+    <button (click)="navigate()">Delete</button>
+ </td>
+  </tr>
+
+</table>
+
+<br>
+<br>
+<button (click)="navigate()">Add</button>
